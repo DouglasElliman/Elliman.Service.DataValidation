@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DATA\" />
+    <None Remove="CLASSES\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DATA\" />
+    <Folder Include="CLASSES\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="EnterpriseLibrary.Data" Version="6.0.1304" />
+  </ItemGroup>
+</Project>
